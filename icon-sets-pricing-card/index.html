@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pricing card</title>
+    <style>
+        .fa-check{
+            color: #4D46A5;
+        }
+        .fa-times{
+            color: red;
+        }
+        .fa-check,
+        .fa-times{
+            margin-right: 5px;
+            padding: 7px;
+            background-color: #e0dff6;
+            border-radius: 50%;
+        }
+        .fa-cart-shopping{
+            color: #4D46A5;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="tabs">
+            <!-- tablist -->
+            <div class="btn-container">
+                <button role="tablist" aria-selected="false" class="btn-tab" data-id="basic">Basic</button>
+                <button role="tablist" aria-selected="true" class="btn-tab" data-id="standatd">Standard</button>
+                <button role="tablist" aria-selected="false" class="btn-tab" data-id="premium">Premium</button>
+            </div>
+
+            <!-- tabPanel -->
+            <div role="tabpanel" id="basic" hidden>
+                <p class="tag">Basic</p>
+                <h2 class="price">Icon Sets <span>$60</span></h2>
+                <p class="description">Up to 50 creative & professional icons + one color versions/themes</p>
+                <ul class="list">
+                    <li><i class="fas fa-check"></i>Included source files</li>
+                    <li><i class="fas  fa-times"></i>Converted to responsive components</li>
+                </ul>
+            </div>
+
+            <!-- tabpanel -->
+            <div role="tabpanel" id="standatd">
+                <p class="tag">Standard</p>
+                <h2 class="price">Icon Sets <span>$120</span></h2>
+                <p class="description">Up to 100 creative & professional icons + two color versions/themes per month</p>
+                <ul class="list">
+                    <li><i class="fas fa-check"></i>Included source files</li>
+                    <li><i class="fas fa-check"></i>Converted to responsive components</li>
+                </ul>
+            </div>
+
+            <!-- tabpanel -->
+            <div role="tabpanel" id="premium" hidden>
+                <p class="tag">Premium</p>
+                <h2 class="price">Icon Sets <span>$180</span></h2>
+                <p class="description">Up to 200 creative & professional icons + four color versions/themes</p>
+                <ul class="list">
+                    <li><i class="fas fa-check"></i>Included source files</li>
+                    <li><i class="fas fa-check"></i>Converted to responsive components</li>
+                </ul>
+            </div>
+
+            <!-- btn primary -->
+            <button type="submit" class="btn-primary">Add to cart</button>
+        </div>
+        <!-- success message -->
+        <div  class="success-message">
+            <div class="message">
+                <i class="fa-solid fa-cart-shopping  fa-5x"></i>
+                <p>Succesfully added to the cart!</p>
+                <button class="btn-secondary">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/16ca69847e.js" crossorigin="anonymous"></script>
+</body>
+</html>
